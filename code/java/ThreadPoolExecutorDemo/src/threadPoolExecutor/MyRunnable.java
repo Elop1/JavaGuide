@@ -18,6 +18,8 @@ public class MyRunnable implements Runnable {
     public void run() {
         System.out.println(Thread.currentThread().getName() + " Start. Time = " + new Date());
         processCommand();
+        //自己新增Test
+        System.out.println(Thread.currentThread().isAlive());
         System.out.println(Thread.currentThread().getName() + " End. Time = " + new Date());
     }
 
